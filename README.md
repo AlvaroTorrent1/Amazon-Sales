@@ -11,9 +11,9 @@ In this project, I conducted a thorough data analysis using an Amazon Prime Vide
 ### Steps followed 
 
 - Step 1 : Load data into BigQuery, dataset is a xls. file.
-- 
-- Step 2 : exploring the dataset to understand its structure, and patterns. Then, I cleaned the data meticulously to address missing values, outliers, and inconsistencies, ensuring data integrity
-- 
+  
+- Step 2 : exploring the dataset to understand its structure, and patterns. Then, cleaned the data meticulously to address missing values, outliers, and inconsistencies, ensuring data integrity
+  
 - Step 3 : Connect to Power BI using BigQuery as a datasource.
 - Step 4 : 
 - Step 5 : For calculating average delay time, null values were not taken into account as only less than 1% values are null in this column(i.e column named "Arrival Delay") 
