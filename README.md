@@ -5,19 +5,17 @@
 
 ## Problem Statement
 
-This dashboard helps the airlines understand their customers better. It helps the airlines know if their customers are satisfied with their services. Through different ratings, they get to know their improvement area, & thus they can improve their services by identifying these area. It also lets them know the average delay & departure time, thus since by using this dashboard they have identified this problem, they can further work on factors responsible for these unwanted delays.
-
-Since, number of neutral/dissatisfied customers (almost 57 %) are more than satisfied customers (around 43 %), thus in all they must work on improving their services. 
-
-Also since average delay in arrival & departure both is 15 minutes, thus they must try to reduce it.
+In this project, I conducted a thorough data analysis using an Amazon Prime Video dataset from Kaggle stored in Google Cloud BigQuery. The project involved data cleaning, preprocessing, and exploratory data analysis (EDA). In the provided link, you'll discover a comprehensive and thorough description detailing all steps and analytics conducted.
 
 
 ### Steps followed 
 
-- Step 1 : Load data into Power BI Desktop, dataset is a csv file.
-- Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
-- Step 3 : Also since by default, profile will be opened only for 1000 rows so you need to select "column profiling based on entire dataset".
-- Step 4 : It was observed that in none of the columns errors & empty values were present except column named "Arrival Delay".
+- Step 1 : Load data into BigQuery, dataset is a xls. file.
+- 
+- Step 2 : exploring the dataset to understand its structure, and patterns. Then, I cleaned the data meticulously to address missing values, outliers, and inconsistencies, ensuring data integrity
+- 
+- Step 3 : Connect to Power BI using BigQuery as a datasource.
+- Step 4 : 
 - Step 5 : For calculating average delay time, null values were not taken into account as only less than 1% values are null in this column(i.e column named "Arrival Delay") 
 - Step 6 : In the report view, under the view tab, theme was selected.
 - Step 7 : Since the data contains various ratings, thus in order to represent ratings, a new visual was added using the three ellipses in the visualizations pane in report view. 
@@ -136,18 +134,22 @@ A single page report was created on Power BI Desktop & it was then published to 
 
 Following inferences can be drawn from the dashboard;
 
-### [1] Total Number of Customers = 129880
+### [1] Total Numbers 
 
-   Number of satisfied Customers (Male) = 28159 (21.68 %)
+   Number of genres = 518
 
-   Number of satisfied Customers (Female) = 28269 (21.76 %)
+   Number of titles = 9641
 
-   Number of neutral/unsatisfied customers (Male) = 35822 (27.58 %)
+   Number of directors = 5769
 
-   Number of neutral/unsatisfied customers (Female) = 37630 (28.97 %)
+   Number of countries = 87
+
+   Number of movies = 7814 (80.91%)
+   
+   Number of TV Shows = 1844 (19.09%)
 
 
-           thus, higher number of customers are neutral/unsatisfied.
+       
            
 ### [2] Average Ratings
 
